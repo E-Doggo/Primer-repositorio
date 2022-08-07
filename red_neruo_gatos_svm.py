@@ -53,8 +53,8 @@ gatillosToGrisTest = gatillosGris['test_set_x'][:]
 
 gatillos_GrisTest = convertImagenGris(gatillosToGrisTest, tamTest)
 
-print(clasificador.predict(gatillos_GrisTest[30].reshape(1,-1)))
-pl.imshow(gatillosGris['test_set_x'][30])
+#print(clasificador.predict(gatillos_GrisTest[30].reshape(1,-1)))
+#pl.imshow(gatillosGris['test_set_x'][30])
 
 for i in range(tamTest):
     res = clasificador.predict(gatillos_GrisTest[i].reshape(1,-1))
